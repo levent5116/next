@@ -1,0 +1,14 @@
+from tkinter import *
+d='s'
+def click():
+    d=a_entry.get()
+    a_label=Label(window, text=("Здравствуйте", d))
+    a_label.pack()
+window=Tk()
+window.geometry('450x230')
+a_label=Label(window,text=("Здравствуйте",d))
+a_entry=Entry(window)
+send_btn=Button(window,text='Войти',command=click)
+send_btn.pack()
+a_entry.pack()
+window.mainloop()
